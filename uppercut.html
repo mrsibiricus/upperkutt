@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="./UCfiles/UCutt.css">
+    <style media="screen">
+      footer{
+        font-size: 8px;
+      }
+    </style>
+  <script type="text/javascript">
+
+
+  window.onload = start;
+
+  function start(){
+    document.getElementById("imgmenu").onclick = menu;
+    document.getElementById("btn").onclick = navslide;
+    var sound = new Audio("punches.wav");
+    sound.play();
+    setInterval(show, 1000);
+
+
+    function menu() {
+    document.getElementById("nav").style.width = "170px";
+    document.getElementById("content").style.marginLeft = "170px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function navslide() {
+    document.getElementById("nav").style.width = "0";
+    document.getElementById("content").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+
+
+    function show(){
+
+    var today = new Date();
+    var a = today.getHours();
+    var b = today.getMinutes();
+    var c = today.getSeconds();
+
+
+      if (b < 10){
+        b = "0" + b;
+      }
+      if (c < 10) {
+        c = "0" + c;
+      }
+      if (a < 0){
+        a = "0" + a;
+      }
+
+     document.getElementById('timedate').innerHTML = a + ":" + b + ":" + c + "<br>" + today.toDateString();
+       }
+       }
+
+
+
+
+  </script>
+  </head>
+  <body>
+
+
+    <nav id="nav">
+      <a href="javascript:void(0)" id="btn">×</a>
+  <ul>
+    Våre behandlinger
+      <ul>
+        <li><b>Klipp</b></li>
+          <ul>
+            <li><a href="http://www.it-stud.hiof.no/~jorgenki/herre.jpg">Herre</a></li>
+            <li><a href="http://www.it-stud.hiof.no/~jorgenki/dame.jpg">Dame</a></li>
+            <li><a href="http://www.it-stud.hiof.no/~jorgenki/barn.png">Barn</a></li>
+            <li class="hvd">Styling</li>
+            <ul class="liste">
+              <li><a href="http://www.it-stud.hiof.no/~jorgenki/farge.jpg">Farge</a></li>
+              <li><a href="http://www.it-stud.hiof.no/~jorgenki/striping.jpg">Striping</a></li>
+              <li><a href="http://www.it-stud.hiof.no/~jorgenki/permanent.jpg">Permanent</a></li>
+            </ul>
+
+          </ul>
+        <li><b>Om oss</b></li>
+        <ul>
+          <li><a href="http://www.it-stud.hiof.no/~jorgenki/omuc.html">Uppercut</a></li>
+
+
+    </ul></nav>
+
+
+<div id="content">
+<img src="./UCfiles/glove.png" alt="hanske" width="100" height="100" id="imgmenu">
+<span>
+BOKS HANSKEN!
+</span>
+<span style="float:right;" id="timedate">17:56:47<br>Wed Oct 19 2016</span>
+  <header id="head">
+
+
+
+   <h2><img src="./UCfiles/UClogo.png" alt="logo" width="200px" height="100px;"></h2>
+
+
+
+
+           </header>
+<section>
+
+</section>
+
+  <footer>
+     Vi leverer førsteklasses behandlinger
+      <br>
+     for hele familen
+     <br>
+     Vår spesialitet er party frisyrer
+  </footer>
+</div>
+
+
+  
+
+</body></html>

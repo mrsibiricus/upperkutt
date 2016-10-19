@@ -1,0 +1,114 @@
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+  margin: auto;
+
+  background-image: url(http://www.it-stud.hiof.no/~jorgenki/boxing.jpg);
+  height: 100vh;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+header h2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header #timedate {
+  float: right;
+}
+
+nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 0vw;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: Gray;
+  overflow-x: hidden;
+  padding-top: 10px;
+  -webkit-transition: 1s;
+          transition: 1s;
+  color: white;
+}
+nav ul {
+  padding-left: 10px;
+}
+nav ul li {
+  padding: 5px 5px 5px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #FFFFFF;
+  display: block;
+  margin-left: -10px;
+  font-size: 12px;
+}
+nav a {
+  text-decoration: none;
+  color: purpel;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+}
+nav a:hover {
+  color: red;
+}
+nav #btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#content {
+  -webkit-transition: margin-left .5s;
+          transition: margin-left .5s;
+  padding: 20px;
+}
+#content span {
+  color: white;
+  font-size: 10px;
+}
+#content header {
+  margin: auto;
+  border: 3px solid white;
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: white;
+  width: 50vw;
+}
+#content footer {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 30px;
+  position: fixed;
+}
